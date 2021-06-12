@@ -3,7 +3,7 @@
 
 ## Issue Description
 
-Launching the main class [org.aksw.playground.vaadin.aceeditor.MainAppVaadinAceEditor](src/main/java/org/aksw/playground/vaadin/aceeditor/MainAppVaadinAceEditor) or running `mvn spring-boot:run` and visiting http://localhost:8000 yields the exception below.
+Launching the main class [org.aksw.playground.vaadin.aceeditor.MainAppVaadinAceEditor](src/main/java/org/aksw/playground/vaadin/aceeditor/MainAppVaadinAceEditor.java) or running `mvn spring-boot:run` and visiting http://localhost:8000 yields the exception below.
 
 The code of the actual view is in: [AceEditorView.java](src/main/java/org/aksw/playground/vaadin/aceeditor/AceEditorView.java).
 
