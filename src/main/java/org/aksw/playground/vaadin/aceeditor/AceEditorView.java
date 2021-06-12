@@ -1,5 +1,6 @@
 package org.aksw.playground.vaadin.aceeditor;
 
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.router.Route;
@@ -28,6 +29,10 @@ public class AceEditorView extends AppLayout {
         textArea.setMode(AceMode.sparql);
         textArea.setTheme(AceTheme.chrome);
         textArea.setFontSize(18);
-        setContent(textArea);
+        
+        Component c[] = new Component[] {null};
+        c[0] = textArea; // ArrayStoreException: de.f0rce.ace.AceEditor - WHAT THE HECK???
+        
+        setContent(c[0]);
     }
 }
